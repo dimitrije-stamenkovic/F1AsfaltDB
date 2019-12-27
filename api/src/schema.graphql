@@ -1,0 +1,80 @@
+type FormulaOne {
+  name: String
+  founded: Int
+  seasons: [HAS_SEASONS]
+}
+
+type HAS_SEASONS @relation(name: "HAS_SEASONS") {
+  from: FormulaOne
+  to: Season
+}
+
+type Driver {
+  driverId: String!
+  permanentNumber: String!
+  code: String!
+  url: String!
+  givenName: String!
+  familyName: String!
+  dateOfBirth: String!
+  nationality: String!
+  salary: String!
+  drives_for: [HAS_DRIVER]
+  winner_on: [FINISHED_RACE]
+}
+
+type Constructor {
+  constructorId: String!
+  url: String!
+  name: String!
+  nationality: String!
+  drivers: [HAS_DRIVER]
+  participated: [HAS_CONSTRUCTORS]
+}
+
+type HAS_DRIVER @relation(name: "HAS_DRIVER") {
+  from: Constructor
+  to: Driver
+}
+
+type Circuit {
+  circuitId: String!
+  url: String
+  circuitName: String
+  country: String
+  length: String
+  winner: [FINISHED_RACE]
+}
+
+type FINISHED_RACE @relation(name: "FINISHED_RACE") {
+  from: Circuit
+  to: Driver
+  position: String!
+}
+
+type Season {
+  year: Int
+  circuits: [HAS_CIRCUITS]
+  drivers: [ALL_DRIVERS]
+  constructors: [HAS_CONSTRUCTORS]
+  part_of: [HAS_SEASONS]
+}
+
+type HAS_CONSTRUCTORS @relation(name: "HAS_CONSTRUCTORS") {
+  from: Season
+  to: Constructor
+  points: String
+}
+
+type HAS_CIRCUITS @relation(name: "HAS_CIRCUITS") {
+  from: Season
+  to: Circuit
+  DNF: String!
+  DATE: String!
+}
+
+type ALL_DRIVERS @relation(name: "ALL_DRIVERS") {
+  from: Season
+  to: Driver
+  points: String
+}
