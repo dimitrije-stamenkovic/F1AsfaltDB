@@ -26,7 +26,7 @@ const TopList = () => {
           <p>{item.givenName}</p>
           <p>{item.familyName}</p>
           <p>{item.permanentNumber}</p>
-          <img src={item.url}></img>
+          {/* <img src={item.url}></img> */}
         </div>
       ))}
     </div>

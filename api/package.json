@@ -1,7 +1,7 @@
 {
-  "name": "grand-stack-starter-api",
+  "name": "F1AsfaltDB",
   "version": "0.0.1",
-  "description": "API app for GRANDstack",
+  "description": "API  for F1AsfaltDB",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,23 +11,23 @@
   "author": "William Lyon",
   "license": "MIT",
   "dependencies": {
-    "apollo-boost": "^0.1.22",
+    "apollo-boost": "^0.4.7",
     "apollo-cache-inmemory": "^1.3.11",
     "apollo-client": "^2.4.7",
     "apollo-link-http": "^1.5.7",
-    "apollo-server": "^2.2.4",
-    "dotenv": "^5.0.1",
+    "apollo-server": "^2.9.15",
+    "dotenv": "^8.2.0",
     "graphql-tag": "^2.10.0",
-    "neo4j-driver": "^1.7.2",
-    "neo4j-graphql-js": "^2.1.1",
+    "neo4j-driver": "^4.0.1",
+    "neo4j-graphql-js": "^2.11.1",
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
-    "nodemon": "^1.18.7"
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "nodemon": "^2.0.2"
   },
   "husky": {
     "hooks": {
