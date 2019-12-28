@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
 import React from "react";
-
+import { Avatar, List } from "antd";
 const GET_DRIVER = gql`
   {
     Driver {
@@ -20,16 +20,22 @@ const TopList = () => {
   if (error) return `Error! ${error}`;
 
   return (
-    <div>
+    <List>
       {data.Driver.map(item => (
-        <div key={item.givenName}>
-          <p>{item.givenName}</p>
-          <p>{item.familyName}</p>
-          <p>{item.permanentNumber}</p>
-          {/* <img src={item.url}></img> */}
-        </div>
+        <List.Item key={item.givenName}>
+          <List.Item.Meta
+            avatar={<Avatar src={item.url} />}
+            description={
+              item.givenName +
+              " " +
+              item.familyName +
+              " " +
+              item.permanentNumber
+            }
+          />
+        </List.Item>
       ))}
-    </div>
+    </List>
   );
 };
 

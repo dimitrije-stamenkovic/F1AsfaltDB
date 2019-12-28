@@ -22,7 +22,7 @@ type Driver {
   podiums: Int
   salary: String!
   drives_for: [HAS_DRIVER]
-  winner_on: [FINISHED_RACE]
+  finished_race: [FINISHED_RACE]
 }
 
 type Constructor {
@@ -50,8 +50,8 @@ type Circuit {
 }
 
 type FINISHED_RACE @relation(name: "FINISHED_RACE") {
-  from: Circuit
-  to: Driver
+  from: Driver
+  to: Circuit
   position: String!
 }
 

@@ -1,5 +1,12 @@
 export default /* GraphQL */ `
   mutation {
+    s1: CreateSeason(year: 2019) {
+      year
+    }
+    f1: CreateFormulaOne(name: "Formula 1", founded: 1950) {
+      name
+      founded
+    }
     d1: CreateDriver(
       driverId: "hamilton"
       permanentNumber: "44"
@@ -393,6 +400,1173 @@ export default /* GraphQL */ `
       chassis: "FW42"
     ) {
       name
+    }
+    ci1: CreateCircuit(
+      circuitId: "albert_park"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Albert_Lake_Park_Street_Circuit_in_Melbourne%2C_Australia.svg/1920px-Albert_Lake_Park_Street_Circuit_in_Melbourne%2C_Australia.svg.png"
+      circuitName: "Albert Park Grand Prix Circuit"
+      length: "5.25km"
+      country: "Australia"
+    ) {
+      circuitId
+    }
+    ci2: CreateCircuit(
+      circuitId: "bahrain"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Bahrain_International_Circuit--Grand_Prix_Layout.svg/250px-Bahrain_International_Circuit--Grand_Prix_Layout.svg.png"
+      circuitName: "Bahrain International Circuit"
+      length: "5.4km"
+      country: "Bahrain"
+    ) {
+      circuitId
+    }
+    ci3: CreateCircuit(
+      circuitId: "shangai"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Shanghai_International_Racing_Circuit_track_map.svg/250px-Shanghai_International_Racing_Circuit_track_map.svg.png"
+      circuitName: "Shanghai International Circuit"
+      length: "5.45km"
+      country: "China"
+    ) {
+      circuitId
+    }
+    ci4: CreateCircuit(
+      circuitId: "baku"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Baku-F1-Street-Circuit-rev1.png/300px-Baku-F1-Street-Circuit-rev1.png"
+      circuitName: "Baku City Circuit"
+      length: "6km"
+      country: "Azerbaijan"
+    ) {
+      circuitId
+    }
+    ci5: CreateCircuit(
+      circuitId: "catalunya"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Formula1_Circuit_Catalunya.svg/250px-Formula1_Circuit_Catalunya.svg.png"
+      circuitName: "Circuit de Barcelona-Catalunya"
+      length: "4.6km"
+      country: "Spain"
+    ) {
+      circuitId
+    }
+    ci6: CreateCircuit(
+      circuitId: "monaco"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Monte_Carlo_Formula_1_track_map.svg/250px-Monte_Carlo_Formula_1_track_map.svg.png"
+      circuitName: "Circuit de Monaco"
+      length: "3.3km"
+      country: "Monaco"
+    ) {
+      circuitId
+    }
+    ci7: CreateCircuit(
+      circuitId: "villeneuve"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Circuit_Gilles_Villeneuve.svg/280px-Circuit_Gilles_Villeneuve.svg.png"
+      circuitName: "Circuit Gilles Villeneuve"
+      length: "4.3km"
+      country: "Canada"
+    ) {
+      circuitId
+    }
+    ci8: CreateCircuit(
+      circuitId: "paul_ricard"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Circut_Paul_Ricard_2018_layout_map.png/250px-Circut_Paul_Ricard_2018_layout_map.png"
+      circuitName: " Circuit Paul Ricard "
+      length: "5.8km"
+      country: "France"
+    ) {
+      circuitId
+    }
+    ci9: CreateCircuit(
+      circuitId: "red_bull_ring"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Circuit_Red_Bull_Ring.svg/250px-Circuit_Red_Bull_Ring.svg.png"
+      circuitName: "Red Bull Ring"
+      length: "4.3km"
+      country: "Austria"
+    ) {
+      circuitId
+    }
+    ci10: CreateCircuit(
+      circuitId: "silverstone"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Silverstone_Circuit_2011.png/250px-Silverstone_Circuit_2011.png"
+      circuitName: "Silverstone"
+      length: "5.9km"
+      country: "Great Britain"
+    ) {
+      circuitId
+    }
+    ci11: CreateCircuit(
+      circuitId: "hockenheimring"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hockenheim2012.svg/250px-Hockenheim2012.svg.png"
+      circuitName: "Hockenheimring"
+      length: "4.57km"
+      country: "Germany"
+    ) {
+      circuitId
+    }
+    ci12: CreateCircuit(
+      circuitId: "hungaroring"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Hungaroring.svg/260px-Hungaroring.svg.png"
+      circuitName: "Hungaroring"
+      length: "4.4km"
+      country: "Hungary"
+    ) {
+      circuitId
+    }
+    ci13: CreateCircuit(
+      circuitId: "spa"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Spa-Francorchamps_of_Belgium.svg/260px-Spa-Francorchamps_of_Belgium.svg.png"
+      circuitName: "Circuit de Spa-Francorchamps"
+      length: "7km"
+      country: "Belgium"
+    ) {
+      circuitId
+    }
+    ci14: CreateCircuit(
+      circuitId: "monza"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Monza_track_map.svg/260px-Monza_track_map.svg.png"
+      circuitName: "Autodromo Nazionale di Monza"
+      length: "5.8km"
+      country: "Italy"
+    ) {
+      circuitId
+    }
+    ci15: CreateCircuit(
+      circuitId: "marina_bay"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Marina_bay_circuit.svg/240px-Marina_bay_circuit.svg.png"
+      circuitName: "Marina Bay Street Circuit"
+      length: "5km"
+      country: "Singapore"
+    ) {
+      circuitId
+    }
+    ci16: CreateCircuit(
+      circuitId: "sochi"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Circuit_Sochi.svg/250px-Circuit_Sochi.svg.png"
+      circuitName: "Sochi Autodrom"
+      length: "5.85km"
+      country: "Russia"
+    ) {
+      circuitId
+    }
+    ci17: CreateCircuit(
+      circuitId: "suzuka"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Suzuka_circuit_map--2005.svg/260px-Suzuka_circuit_map--2005.svg.png"
+      circuitName: "Suzuka International Racing Course"
+      length: "5.8km"
+      country: "Japan"
+    ) {
+      circuitId
+    }
+    ci18: CreateCircuit(
+      circuitId: "hermanos_rodriguez"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg/250px-Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg.png"
+      circuitName: "Autódromo Hermanos Rodríguez"
+      length: "5.25km"
+      country: "Mexico"
+    ) {
+      circuitId
+    }
+    ci19: CreateCircuit(
+      circuitId: "cota"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_circuit.svg/250px-Austin_circuit.svg.png"
+      circuitName: "Circuit of the Americas"
+      length: "5.5km"
+      country: "USA"
+    ) {
+      circuitId
+    }
+    ci20: CreateCircuit(
+      circuitId: "interlagos"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Circuit_Interlagos.svg/260px-Circuit_Interlagos.svg.png"
+      circuitName: "Autódromo José Carlos Pace"
+      length: "4.3km"
+      country: "Brazil"
+    ) {
+      circuitId
+    }
+    ci21: CreateCircuit(
+      circuitId: "yas_marina"
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Circuit_Yas-Island.svg/250px-Circuit_Yas-Island.svg.png"
+      circuitName: "Yas Marina Circuit"
+      length: "5.5km"
+      country: "UAE"
+    ) {
+      circuitId
+    }
+    a1: AddFormulaOneSeasons(from: { name: "Formula 1" }, to: { year: 2019 }) {
+      from {
+        name
+      }
+      to {
+        year
+      }
+    }
+    b1: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "mclaren" }
+      data: { points: "145" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b2: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "mercedes" }
+      data: { points: "739" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b3: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "ferrari" }
+      data: { points: "504" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b4: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "red_bull" }
+      data: { points: "417" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b5: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "renault" }
+      data: { points: "91" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b6: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "toro_rosso" }
+      data: { points: "85" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b7: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "racing_point" }
+      data: { points: "73" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b8: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "alfa" }
+      data: { points: "57" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b9: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "haas" }
+      data: { points: "28" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+    b10: AddSeasonConstructors(
+      from: { year: 2019 }
+      to: { constructorId: "williams" }
+      data: { points: "1" }
+    ) {
+      from {
+        year
+      }
+      to {
+        constructorId
+      }
+    }
+
+    o1: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "albert_park" }
+      data: { DNF: "3", DATE: "17-03-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o2: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "bahrain" }
+      data: { DNF: "2", DATE: "31-03-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o3: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "shangai" }
+      data: { DNF: "0", DATE: "14-04-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o4: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "baku" }
+      data: { DNF: "5", DATE: "28-04-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o5: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "catalunya" }
+      data: { DNF: "0", DATE: "12-05-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o6: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "monaco" }
+      data: { DNF: "3", DATE: "26-05-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o7: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "villeneuve" }
+      data: { DNF: "3", DATE: "09-06-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o8: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "paul_ricard" }
+      data: { DNF: "0", DATE: "23-06-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o9: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "red_bull_ring" }
+      data: { DNF: "0", DATE: "30-06-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o10: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "silverstone" }
+      data: { DNF: "0", DATE: "14-07-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o11: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "hockenheimring" }
+      data: { DNF: "0", DATE: "28-07-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o12: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "hungaroring" }
+      data: { DNF: "0", DATE: "04-08-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o13: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "spa" }
+      data: { DNF: "0", DATE: "01-09-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o14: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "monza" }
+      data: { DNF: "3", DATE: "08-09-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o15: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "marina_bay" }
+      data: { DNF: "3", DATE: "22-09-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o16: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "sochi" }
+      data: { DNF: "3", DATE: "29-09-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o17: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "suzuka" }
+      data: { DNF: "3", DATE: "13-10-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o18: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "hermanos_rodriguez" }
+      data: { DNF: "0", DATE: "27-10-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o19: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "cota" }
+      data: { DNF: "5", DATE: "03-11-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o20: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "interlagos" }
+      data: { DNF: "5", DATE: "17-11-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+
+    o21: AddSeasonCircuits(
+      from: { year: 2019 }
+      to: { circuitId: "yas_marina" }
+      data: { DNF: "3", DATE: "01-12-2019" }
+    ) {
+      from {
+        year
+      }
+    }
+    c1: AddConstructorDrivers(
+      from: { constructorId: "ferrari" }
+      to: { driverId: "vettel" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e1: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "vettel" }
+      data: { points: "240" }
+    ) {
+      points
+    }
+    c2: AddConstructorDrivers(
+      from: { constructorId: "ferrari" }
+      to: { driverId: "leclerc" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e2: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "leclerc" }
+      data: { points: "264" }
+    ) {
+      points
+    }
+    c3: AddConstructorDrivers(
+      from: { constructorId: "mercedes" }
+      to: { driverId: "hamilton" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e3: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "hamilton" }
+      data: { points: "413" }
+    ) {
+      points
+    }
+    c4: AddConstructorDrivers(
+      from: { constructorId: "mercedes" }
+      to: { driverId: "bottas" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e4: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "bottas" }
+      data: { points: "326" }
+    ) {
+      points
+    }
+    c5: AddConstructorDrivers(
+      from: { constructorId: "mclaren" }
+      to: { driverId: "norris" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e5: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "norris" }
+      data: { points: "49" }
+    ) {
+      points
+    }
+    c6: AddConstructorDrivers(
+      from: { constructorId: "mclaren" }
+      to: { driverId: "sainz" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e6: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "sainz" }
+      data: { points: "96" }
+    ) {
+      points
+    }
+    c7: AddConstructorDrivers(
+      from: { constructorId: "red_bull" }
+      to: { driverId: "verstapen" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e7: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "verstapen" }
+      data: { points: "278" }
+    ) {
+      points
+    }
+    c8: AddConstructorDrivers(
+      from: { constructorId: "red_bull" }
+      to: { driverId: "albon" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e8: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "albon" }
+      data: { points: "92" }
+    ) {
+      points
+    }
+    c9: AddConstructorDrivers(
+      from: { constructorId: "renault" }
+      to: { driverId: "ricciardo" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e9: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "ricciardo" }
+      data: { points: "53" }
+    ) {
+      points
+    }
+    c10: AddConstructorDrivers(
+      from: { constructorId: "renault" }
+      to: { driverId: "hulkenberg" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e10: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "hulkenberg" }
+      data: { points: "37" }
+    ) {
+      points
+    }
+    c11: AddConstructorDrivers(
+      from: { constructorId: "toro_rosso" }
+      to: { driverId: "gasly" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e11: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "gasly" }
+      data: { points: "95" }
+    ) {
+      points
+    }
+    c12: AddConstructorDrivers(
+      from: { constructorId: "toro_rosso" }
+      to: { driverId: "kvyat" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e12: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "kvyat" }
+      data: { points: "37" }
+    ) {
+      points
+    }
+    c13: AddConstructorDrivers(
+      from: { constructorId: "racing_point" }
+      to: { driverId: "stroll" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e13: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "stroll" }
+      data: { points: "21" }
+    ) {
+      points
+    }
+    c14: AddConstructorDrivers(
+      from: { constructorId: "racing_point" }
+      to: { driverId: "perez" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e14: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "perez" }
+      data: { points: "52" }
+    ) {
+      points
+    }
+    c15: AddConstructorDrivers(
+      from: { constructorId: "alfa" }
+      to: { driverId: "raikonen" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e15: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "raikonen" }
+      data: { points: "43" }
+    ) {
+      points
+    }
+    c16: AddConstructorDrivers(
+      from: { constructorId: "alfa" }
+      to: { driverId: "giovinazzi" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e16: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "giovinazzi" }
+      data: { points: "14" }
+    ) {
+      points
+    }
+    c17: AddConstructorDrivers(
+      from: { constructorId: "haas" }
+      to: { driverId: "grosjean" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e17: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "grosjean" }
+      data: { points: "8" }
+    ) {
+      points
+    }
+    c18: AddConstructorDrivers(
+      from: { constructorId: "haas" }
+      to: { driverId: "magnusen" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e18: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "magnusen" }
+      data: { points: "20" }
+    ) {
+      points
+    }
+    c19: AddConstructorDrivers(
+      from: { constructorId: "williams" }
+      to: { driverId: "kubica" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e19: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "kubica" }
+      data: { points: "1" }
+    ) {
+      points
+    }
+    c20: AddConstructorDrivers(
+      from: { constructorId: "williams" }
+      to: { driverId: "russel" }
+    ) {
+      from {
+        constructorId
+      }
+      to {
+        driverId
+      }
+    }
+    e20: AddSeasonDrivers(
+      from: { year: 2019 }
+      to: { driverId: "russel" }
+      data: { points: "0" }
+    ) {
+      points
+    }
+    k1: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "vettel" }
+      data: { position: "1" }
+    ) {
+      position
+    }
+    k2: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "leclerc" }
+      data: { position: "2" }
+    ) {
+      position
+    }
+    k3: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "hamilton" }
+      data: { position: "3" }
+    ) {
+      position
+    }
+    k4: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "bottas" }
+      data: { position: "4" }
+    ) {
+      position
+    }
+    k5: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "verstapen" }
+      data: { position: "5" }
+    ) {
+      position
+    }
+    k6: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "albon" }
+      data: { position: "6" }
+    ) {
+      position
+    }
+    k7: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "sainz" }
+      data: { position: "7" }
+    ) {
+      position
+    }
+    k8: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "gasly" }
+      data: { position: "8" }
+    ) {
+      position
+    }
+    k9: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "ricciardo" }
+      data: { position: "9" }
+    ) {
+      position
+    }
+    k10: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "stroll" }
+      data: { position: "10" }
+    ) {
+      position
+    }
+    k11: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "perez" }
+      data: { position: "11" }
+    ) {
+      position
+    }
+    k12: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "norris" }
+      data: { position: "12" }
+    ) {
+      position
+    }
+    k13: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "raikonen" }
+      data: { position: "13" }
+    ) {
+      position
+    }
+    k14: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "kvyat" }
+      data: { position: "14" }
+    ) {
+      position
+    }
+    k15: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "hulkenberg" }
+      data: { position: "15" }
+    ) {
+      position
+    }
+    k16: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "magnusen" }
+      data: { position: "16" }
+    ) {
+      position
+    }
+    k17: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "giovinazzi" }
+      data: { position: "17" }
+    ) {
+      position
+    }
+    k18: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "grosjean" }
+      data: { position: "18" }
+    ) {
+      position
+    }
+    k19: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "kubica" }
+      data: { position: "19" }
+    ) {
+      position
+    }
+    k20: AddDriverFinished_race(
+      to: { circuitId: "albert_park" }
+      from: { driverId: "russel" }
+      data: { position: "20" }
+    ) {
+      position
+    }
+    v1: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "vettel" }
+      data: { position: "1" }
+    ) {
+      position
+    }
+    v2: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "leclerc" }
+      data: { position: "2" }
+    ) {
+      position
+    }
+    v3: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "hamilton" }
+      data: { position: "3" }
+    ) {
+      position
+    }
+    v4: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "bottas" }
+      data: { position: "4" }
+    ) {
+      position
+    }
+    v5: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "verstapen" }
+      data: { position: "5" }
+    ) {
+      position
+    }
+    v6: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "albon" }
+      data: { position: "6" }
+    ) {
+      position
+    }
+    v7: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "sainz" }
+      data: { position: "7" }
+    ) {
+      position
+    }
+    v8: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "gasly" }
+      data: { position: "8" }
+    ) {
+      position
+    }
+    v9: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "ricciardo" }
+      data: { position: "9" }
+    ) {
+      position
+    }
+    v10: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "stroll" }
+      data: { position: "10" }
+    ) {
+      position
+    }
+    v11: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "perez" }
+      data: { position: "11" }
+    ) {
+      position
+    }
+    v12: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "norris" }
+      data: { position: "12" }
+    ) {
+      position
+    }
+    v13: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "raikonen" }
+      data: { position: "13" }
+    ) {
+      position
+    }
+    v14: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "kvyat" }
+      data: { position: "14" }
+    ) {
+      position
+    }
+    v15: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "hulkenberg" }
+      data: { position: "15" }
+    ) {
+      position
+    }
+    v16: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "magnusen" }
+      data: { position: "16" }
+    ) {
+      position
+    }
+    v17: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "giovinazzi" }
+      data: { position: "17" }
+    ) {
+      position
+    }
+    v18: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "grosjean" }
+      data: { position: "18" }
+    ) {
+      position
+    }
+    v19: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "kubica" }
+      data: { position: "19" }
+    ) {
+      position
+    }
+    v20: AddDriverFinished_race(
+      to: { circuitId: "shangai" }
+      from: { driverId: "russel" }
+      data: { position: "20" }
+    ) {
+      position
     }
   }
 `;
