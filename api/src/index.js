@@ -25,7 +25,7 @@ const schema = makeAugmentedSchema({
  * with fallback to defaults
  */
 var driver = neo4j.driver(
-  "neo4j://localhost",
+  "bolt://localhost:7687",
   neo4j.auth.basic("neo4j", "dev")
 );
 

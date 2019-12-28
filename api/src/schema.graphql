@@ -18,6 +18,8 @@ type Driver {
   familyName: String!
   dateOfBirth: String!
   nationality: String!
+  wins: Int
+  podiums: Int
   salary: String!
   drives_for: [HAS_DRIVER]
   winner_on: [FINISHED_RACE]
@@ -27,6 +29,7 @@ type Constructor {
   constructorId: String!
   url: String!
   name: String!
+  chassis: String!
   nationality: String!
   drivers: [HAS_DRIVER]
   participated: [HAS_CONSTRUCTORS]
