@@ -1,12 +1,15 @@
 import React from "react";
-import { StoreContainer } from "../store";
+import { Input } from "antd";
 
-const Search = () => {
-  const search = StoreContainer.useContainer();
-
+const Search = ({ term, hook }) => {
   return (
-    <div className="test">
-      <input type="text" value={search.input} onChange={search.handleInput} />
+    <div className="Search input">
+      <Input
+        placeholder="Basic usage"
+        type="text"
+        value={term}
+        onChange={ev => hook(ev.target.value)}
+      />
     </div>
   );
 };
