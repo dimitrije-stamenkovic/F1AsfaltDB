@@ -47,8 +47,8 @@ const SimiliarDrivers = ({ driver }) => {
 
   const { loading, error, data } = useQuery(GET_DRIVERS, {
     variables: {
-      wins: driver.wins,
-      podiums: driver.podiums,
+      wins: driver.wins - 10,
+      podiums: driver.podiums - 10,
       nationality: driver.nationality,
       name: driver.name
     }
