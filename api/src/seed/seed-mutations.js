@@ -405,7 +405,7 @@ export default /* GraphQL */ `
       circuitId: "albert_park"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Albert_Lake_Park_Street_Circuit_in_Melbourne%2C_Australia.svg/1920px-Albert_Lake_Park_Street_Circuit_in_Melbourne%2C_Australia.svg.png"
       circuitName: "Albert Park Grand Prix Circuit"
-      length: "5.25km"
+      length: 5.5
       country: "Australia"
     ) {
       circuitId
@@ -414,7 +414,7 @@ export default /* GraphQL */ `
       circuitId: "bahrain"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Bahrain_International_Circuit--Grand_Prix_Layout.svg/250px-Bahrain_International_Circuit--Grand_Prix_Layout.svg.png"
       circuitName: "Bahrain International Circuit"
-      length: "5.4km"
+      length: 5.4
       country: "Bahrain"
     ) {
       circuitId
@@ -423,7 +423,7 @@ export default /* GraphQL */ `
       circuitId: "shangai"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Shanghai_International_Racing_Circuit_track_map.svg/250px-Shanghai_International_Racing_Circuit_track_map.svg.png"
       circuitName: "Shanghai International Circuit"
-      length: "5.45km"
+      length: 5.45
       country: "China"
     ) {
       circuitId
@@ -432,7 +432,7 @@ export default /* GraphQL */ `
       circuitId: "baku"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Baku-F1-Street-Circuit-rev1.png/300px-Baku-F1-Street-Circuit-rev1.png"
       circuitName: "Baku City Circuit"
-      length: "6km"
+      length: 6
       country: "Azerbaijan"
     ) {
       circuitId
@@ -441,7 +441,7 @@ export default /* GraphQL */ `
       circuitId: "catalunya"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Formula1_Circuit_Catalunya.svg/250px-Formula1_Circuit_Catalunya.svg.png"
       circuitName: "Circuit de Barcelona-Catalunya"
-      length: "4.6km"
+      length: 4.6
       country: "Spain"
     ) {
       circuitId
@@ -450,7 +450,7 @@ export default /* GraphQL */ `
       circuitId: "monaco"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Monte_Carlo_Formula_1_track_map.svg/250px-Monte_Carlo_Formula_1_track_map.svg.png"
       circuitName: "Circuit de Monaco"
-      length: "3.3km"
+      length: 3.3
       country: "Monaco"
     ) {
       circuitId
@@ -459,7 +459,7 @@ export default /* GraphQL */ `
       circuitId: "villeneuve"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Circuit_Gilles_Villeneuve.svg/280px-Circuit_Gilles_Villeneuve.svg.png"
       circuitName: "Circuit Gilles Villeneuve"
-      length: "4.3km"
+      length: 4.3
       country: "Canada"
     ) {
       circuitId
@@ -468,7 +468,7 @@ export default /* GraphQL */ `
       circuitId: "paul_ricard"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Circut_Paul_Ricard_2018_layout_map.png/250px-Circut_Paul_Ricard_2018_layout_map.png"
       circuitName: " Circuit Paul Ricard "
-      length: "5.8km"
+      length: 5.8
       country: "France"
     ) {
       circuitId
@@ -477,7 +477,7 @@ export default /* GraphQL */ `
       circuitId: "red_bull_ring"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Circuit_Red_Bull_Ring.svg/250px-Circuit_Red_Bull_Ring.svg.png"
       circuitName: "Red Bull Ring"
-      length: "4.3km"
+      length: 4.3
       country: "Austria"
     ) {
       circuitId
@@ -486,7 +486,7 @@ export default /* GraphQL */ `
       circuitId: "silverstone"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Silverstone_Circuit_2011.png/250px-Silverstone_Circuit_2011.png"
       circuitName: "Silverstone"
-      length: "5.9km"
+      length: 5.9
       country: "Great Britain"
     ) {
       circuitId
@@ -495,7 +495,7 @@ export default /* GraphQL */ `
       circuitId: "hockenheimring"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hockenheim2012.svg/250px-Hockenheim2012.svg.png"
       circuitName: "Hockenheimring"
-      length: "4.57km"
+      length: 4.67
       country: "Germany"
     ) {
       circuitId
@@ -504,7 +504,7 @@ export default /* GraphQL */ `
       circuitId: "hungaroring"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Hungaroring.svg/260px-Hungaroring.svg.png"
       circuitName: "Hungaroring"
-      length: "4.4km"
+      length: 4.4
       country: "Hungary"
     ) {
       circuitId
@@ -513,7 +513,7 @@ export default /* GraphQL */ `
       circuitId: "spa"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Spa-Francorchamps_of_Belgium.svg/260px-Spa-Francorchamps_of_Belgium.svg.png"
       circuitName: "Circuit de Spa-Francorchamps"
-      length: "7km"
+      length: 7
       country: "Belgium"
     ) {
       circuitId
@@ -522,7 +522,7 @@ export default /* GraphQL */ `
       circuitId: "monza"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Monza_track_map.svg/260px-Monza_track_map.svg.png"
       circuitName: "Autodromo Nazionale di Monza"
-      length: "5.8km"
+      length: 5.8
       country: "Italy"
     ) {
       circuitId
@@ -531,7 +531,7 @@ export default /* GraphQL */ `
       circuitId: "marina_bay"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Marina_bay_circuit.svg/240px-Marina_bay_circuit.svg.png"
       circuitName: "Marina Bay Street Circuit"
-      length: "5km"
+      length: 5
       country: "Singapore"
     ) {
       circuitId
@@ -540,7 +540,7 @@ export default /* GraphQL */ `
       circuitId: "sochi"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Circuit_Sochi.svg/250px-Circuit_Sochi.svg.png"
       circuitName: "Sochi Autodrom"
-      length: "5.85km"
+      length: 5.85
       country: "Russia"
     ) {
       circuitId
@@ -549,7 +549,7 @@ export default /* GraphQL */ `
       circuitId: "suzuka"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Suzuka_circuit_map--2005.svg/260px-Suzuka_circuit_map--2005.svg.png"
       circuitName: "Suzuka International Racing Course"
-      length: "5.8km"
+      length: 5.8
       country: "Japan"
     ) {
       circuitId
@@ -558,7 +558,7 @@ export default /* GraphQL */ `
       circuitId: "hermanos_rodriguez"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg/250px-Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg.png"
       circuitName: "Autódromo Hermanos Rodríguez"
-      length: "5.25km"
+      length: 5.25
       country: "Mexico"
     ) {
       circuitId
@@ -567,7 +567,7 @@ export default /* GraphQL */ `
       circuitId: "cota"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_circuit.svg/250px-Austin_circuit.svg.png"
       circuitName: "Circuit of the Americas"
-      length: "5.5km"
+      length: 5.5
       country: "USA"
     ) {
       circuitId
@@ -576,7 +576,7 @@ export default /* GraphQL */ `
       circuitId: "interlagos"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Circuit_Interlagos.svg/260px-Circuit_Interlagos.svg.png"
       circuitName: "Autódromo José Carlos Pace"
-      length: "4.3km"
+      length: 4.3
       country: "Brazil"
     ) {
       circuitId
@@ -585,7 +585,7 @@ export default /* GraphQL */ `
       circuitId: "yas_marina"
       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Circuit_Yas-Island.svg/250px-Circuit_Yas-Island.svg.png"
       circuitName: "Yas Marina Circuit"
-      length: "5.5km"
+      length: 5.5
       country: "UAE"
     ) {
       circuitId
@@ -601,7 +601,7 @@ export default /* GraphQL */ `
     b1: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "mclaren" }
-      data: { points: "145" }
+      data: { points: 145 }
     ) {
       from {
         year
@@ -613,7 +613,7 @@ export default /* GraphQL */ `
     b2: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "mercedes" }
-      data: { points: "739" }
+      data: { points: 739 }
     ) {
       from {
         year
@@ -625,7 +625,7 @@ export default /* GraphQL */ `
     b3: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "ferrari" }
-      data: { points: "504" }
+      data: { points: 504 }
     ) {
       from {
         year
@@ -637,7 +637,7 @@ export default /* GraphQL */ `
     b4: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "red_bull" }
-      data: { points: "417" }
+      data: { points: 417 }
     ) {
       from {
         year
@@ -649,7 +649,7 @@ export default /* GraphQL */ `
     b5: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "renault" }
-      data: { points: "91" }
+      data: { points: 91 }
     ) {
       from {
         year
@@ -661,7 +661,7 @@ export default /* GraphQL */ `
     b6: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "toro_rosso" }
-      data: { points: "85" }
+      data: { points: 85 }
     ) {
       from {
         year
@@ -673,7 +673,7 @@ export default /* GraphQL */ `
     b7: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "racing_point" }
-      data: { points: "73" }
+      data: { points: 73 }
     ) {
       from {
         year
@@ -685,7 +685,7 @@ export default /* GraphQL */ `
     b8: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "alfa" }
-      data: { points: "57" }
+      data: { points: 57 }
     ) {
       from {
         year
@@ -697,7 +697,7 @@ export default /* GraphQL */ `
     b9: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "haas" }
-      data: { points: "28" }
+      data: { points: 28 }
     ) {
       from {
         year
@@ -709,7 +709,7 @@ export default /* GraphQL */ `
     b10: AddSeasonConstructors(
       from: { year: 2019 }
       to: { constructorId: "williams" }
-      data: { points: "1" }
+      data: { points: 1 }
     ) {
       from {
         year
@@ -722,7 +722,7 @@ export default /* GraphQL */ `
     o1: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "albert_park" }
-      data: { DNF: "3", DATE: "17-03-2019" }
+      data: { DNF: 3, DATE: "17-03-2019" }
     ) {
       from {
         year
@@ -732,7 +732,7 @@ export default /* GraphQL */ `
     o2: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "bahrain" }
-      data: { DNF: "2", DATE: "31-03-2019" }
+      data: { DNF: 2, DATE: "31-03-2019" }
     ) {
       from {
         year
@@ -742,7 +742,7 @@ export default /* GraphQL */ `
     o3: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "shangai" }
-      data: { DNF: "0", DATE: "14-04-2019" }
+      data: { DNF: 0, DATE: "14-04-2019" }
     ) {
       from {
         year
@@ -752,7 +752,7 @@ export default /* GraphQL */ `
     o4: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "baku" }
-      data: { DNF: "5", DATE: "28-04-2019" }
+      data: { DNF: 5, DATE: "28-04-2019" }
     ) {
       from {
         year
@@ -762,7 +762,7 @@ export default /* GraphQL */ `
     o5: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "catalunya" }
-      data: { DNF: "0", DATE: "12-05-2019" }
+      data: { DNF: 0, DATE: "12-05-2019" }
     ) {
       from {
         year
@@ -772,7 +772,7 @@ export default /* GraphQL */ `
     o6: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "monaco" }
-      data: { DNF: "3", DATE: "26-05-2019" }
+      data: { DNF: 3, DATE: "26-05-2019" }
     ) {
       from {
         year
@@ -782,7 +782,7 @@ export default /* GraphQL */ `
     o7: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "villeneuve" }
-      data: { DNF: "3", DATE: "09-06-2019" }
+      data: { DNF: 3, DATE: "09-06-2019" }
     ) {
       from {
         year
@@ -792,7 +792,7 @@ export default /* GraphQL */ `
     o8: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "paul_ricard" }
-      data: { DNF: "0", DATE: "23-06-2019" }
+      data: { DNF: 0, DATE: "23-06-2019" }
     ) {
       from {
         year
@@ -802,7 +802,7 @@ export default /* GraphQL */ `
     o9: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "red_bull_ring" }
-      data: { DNF: "0", DATE: "30-06-2019" }
+      data: { DNF: 0, DATE: "30-06-2019" }
     ) {
       from {
         year
@@ -812,7 +812,7 @@ export default /* GraphQL */ `
     o10: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "silverstone" }
-      data: { DNF: "0", DATE: "14-07-2019" }
+      data: { DNF: 0, DATE: "14-07-2019" }
     ) {
       from {
         year
@@ -822,7 +822,7 @@ export default /* GraphQL */ `
     o11: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "hockenheimring" }
-      data: { DNF: "0", DATE: "28-07-2019" }
+      data: { DNF: 5, DATE: "28-07-2019" }
     ) {
       from {
         year
@@ -832,7 +832,7 @@ export default /* GraphQL */ `
     o12: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "hungaroring" }
-      data: { DNF: "0", DATE: "04-08-2019" }
+      data: { DNF: 0, DATE: "04-08-2019" }
     ) {
       from {
         year
@@ -842,7 +842,7 @@ export default /* GraphQL */ `
     o13: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "spa" }
-      data: { DNF: "0", DATE: "01-09-2019" }
+      data: { DNF: 3, DATE: "01-09-2019" }
     ) {
       from {
         year
@@ -852,7 +852,7 @@ export default /* GraphQL */ `
     o14: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "monza" }
-      data: { DNF: "3", DATE: "08-09-2019" }
+      data: { DNF: 2, DATE: "08-09-2019" }
     ) {
       from {
         year
@@ -862,7 +862,7 @@ export default /* GraphQL */ `
     o15: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "marina_bay" }
-      data: { DNF: "3", DATE: "22-09-2019" }
+      data: { DNF: 2, DATE: "22-09-2019" }
     ) {
       from {
         year
@@ -872,7 +872,7 @@ export default /* GraphQL */ `
     o16: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "sochi" }
-      data: { DNF: "3", DATE: "29-09-2019" }
+      data: { DNF: 3, DATE: "29-09-2019" }
     ) {
       from {
         year
@@ -882,7 +882,7 @@ export default /* GraphQL */ `
     o17: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "suzuka" }
-      data: { DNF: "3", DATE: "13-10-2019" }
+      data: { DNF: 2, DATE: "13-10-2019" }
     ) {
       from {
         year
@@ -892,7 +892,7 @@ export default /* GraphQL */ `
     o18: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "hermanos_rodriguez" }
-      data: { DNF: "0", DATE: "27-10-2019" }
+      data: { DNF: 0, DATE: "27-10-2019" }
     ) {
       from {
         year
@@ -902,7 +902,7 @@ export default /* GraphQL */ `
     o19: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "cota" }
-      data: { DNF: "5", DATE: "03-11-2019" }
+      data: { DNF: 5, DATE: "03-11-2019" }
     ) {
       from {
         year
@@ -912,7 +912,7 @@ export default /* GraphQL */ `
     o20: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "interlagos" }
-      data: { DNF: "5", DATE: "17-11-2019" }
+      data: { DNF: 3, DATE: "17-11-2019" }
     ) {
       from {
         year
@@ -922,7 +922,7 @@ export default /* GraphQL */ `
     o21: AddSeasonCircuits(
       from: { year: 2019 }
       to: { circuitId: "yas_marina" }
-      data: { DNF: "3", DATE: "01-12-2019" }
+      data: { DNF: 1, DATE: "01-12-2019" }
     ) {
       from {
         year
@@ -942,7 +942,7 @@ export default /* GraphQL */ `
     e1: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "vettel" }
-      data: { points: "240" }
+      data: { points: 240 }
     ) {
       points
     }
@@ -960,7 +960,7 @@ export default /* GraphQL */ `
     e2: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "leclerc" }
-      data: { points: "264" }
+      data: { points: 264 }
     ) {
       points
     }
@@ -978,7 +978,7 @@ export default /* GraphQL */ `
     e3: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "hamilton" }
-      data: { points: "413" }
+      data: { points: 413 }
     ) {
       points
     }
@@ -996,7 +996,7 @@ export default /* GraphQL */ `
     e4: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "bottas" }
-      data: { points: "326" }
+      data: { points: 326 }
     ) {
       points
     }
@@ -1014,7 +1014,7 @@ export default /* GraphQL */ `
     e5: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "norris" }
-      data: { points: "49" }
+      data: { points: 49 }
     ) {
       points
     }
@@ -1032,7 +1032,7 @@ export default /* GraphQL */ `
     e6: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "sainz" }
-      data: { points: "96" }
+      data: { points: 96 }
     ) {
       points
     }
@@ -1050,7 +1050,7 @@ export default /* GraphQL */ `
     e7: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "verstapen" }
-      data: { points: "278" }
+      data: { points: 278 }
     ) {
       points
     }
@@ -1068,7 +1068,7 @@ export default /* GraphQL */ `
     e8: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "albon" }
-      data: { points: "92" }
+      data: { points: 92 }
     ) {
       points
     }
@@ -1086,7 +1086,7 @@ export default /* GraphQL */ `
     e9: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "ricciardo" }
-      data: { points: "53" }
+      data: { points: 53 }
     ) {
       points
     }
@@ -1104,7 +1104,7 @@ export default /* GraphQL */ `
     e10: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "hulkenberg" }
-      data: { points: "37" }
+      data: { points: 37 }
     ) {
       points
     }
@@ -1122,7 +1122,7 @@ export default /* GraphQL */ `
     e11: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "gasly" }
-      data: { points: "95" }
+      data: { points: 95 }
     ) {
       points
     }
@@ -1140,7 +1140,7 @@ export default /* GraphQL */ `
     e12: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "kvyat" }
-      data: { points: "37" }
+      data: { points: 97 }
     ) {
       points
     }
@@ -1158,7 +1158,7 @@ export default /* GraphQL */ `
     e13: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "stroll" }
-      data: { points: "21" }
+      data: { points: 21 }
     ) {
       points
     }
@@ -1176,7 +1176,7 @@ export default /* GraphQL */ `
     e14: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "perez" }
-      data: { points: "52" }
+      data: { points: 52 }
     ) {
       points
     }
@@ -1194,7 +1194,7 @@ export default /* GraphQL */ `
     e15: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "raikonen" }
-      data: { points: "43" }
+      data: { points: 43 }
     ) {
       points
     }
@@ -1212,7 +1212,7 @@ export default /* GraphQL */ `
     e16: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "giovinazzi" }
-      data: { points: "14" }
+      data: { points: 14 }
     ) {
       points
     }
@@ -1230,7 +1230,7 @@ export default /* GraphQL */ `
     e17: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "grosjean" }
-      data: { points: "8" }
+      data: { points: 8 }
     ) {
       points
     }
@@ -1248,7 +1248,7 @@ export default /* GraphQL */ `
     e18: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "magnusen" }
-      data: { points: "20" }
+      data: { points: 20 }
     ) {
       points
     }
@@ -1266,7 +1266,7 @@ export default /* GraphQL */ `
     e19: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "kubica" }
-      data: { points: "1" }
+      data: { points: 1 }
     ) {
       points
     }
@@ -1284,287 +1284,287 @@ export default /* GraphQL */ `
     e20: AddSeasonDrivers(
       from: { year: 2019 }
       to: { driverId: "russel" }
-      data: { points: "0" }
+      data: { points: 0 }
     ) {
       points
     }
     k1: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "vettel" }
-      data: { position: "1" }
+      data: { position: 1 }
     ) {
       position
     }
     k2: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "leclerc" }
-      data: { position: "2" }
+      data: { position: 2 }
     ) {
       position
     }
     k3: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "hamilton" }
-      data: { position: "3" }
+      data: { position: 3 }
     ) {
       position
     }
     k4: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "bottas" }
-      data: { position: "4" }
+      data: { position: 4 }
     ) {
       position
     }
     k5: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "verstapen" }
-      data: { position: "5" }
+      data: { position: 5 }
     ) {
       position
     }
     k6: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "albon" }
-      data: { position: "6" }
+      data: { position: 6 }
     ) {
       position
     }
     k7: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "sainz" }
-      data: { position: "7" }
+      data: { position: 7 }
     ) {
       position
     }
     k8: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "gasly" }
-      data: { position: "8" }
+      data: { position: 8 }
     ) {
       position
     }
     k9: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "ricciardo" }
-      data: { position: "9" }
+      data: { position: 9 }
     ) {
       position
     }
     k10: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "stroll" }
-      data: { position: "10" }
+      data: { position: 10 }
     ) {
       position
     }
     k11: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "perez" }
-      data: { position: "11" }
+      data: { position: 11 }
     ) {
       position
     }
     k12: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "norris" }
-      data: { position: "12" }
+      data: { position: 12 }
     ) {
       position
     }
     k13: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "raikonen" }
-      data: { position: "13" }
+      data: { position: 13 }
     ) {
       position
     }
     k14: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "kvyat" }
-      data: { position: "14" }
+      data: { position: 14 }
     ) {
       position
     }
     k15: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "hulkenberg" }
-      data: { position: "15" }
+      data: { position: 15 }
     ) {
       position
     }
     k16: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "magnusen" }
-      data: { position: "16" }
+      data: { position: 16 }
     ) {
       position
     }
     k17: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "giovinazzi" }
-      data: { position: "17" }
+      data: { position: 17 }
     ) {
       position
     }
     k18: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "grosjean" }
-      data: { position: "18" }
+      data: { position: 18 }
     ) {
       position
     }
     k19: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "kubica" }
-      data: { position: "19" }
+      data: { position: 19 }
     ) {
       position
     }
     k20: AddDriverFinished_race(
       to: { circuitId: "albert_park" }
       from: { driverId: "russel" }
-      data: { position: "20" }
+      data: { position: 20 }
     ) {
       position
     }
     v1: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "vettel" }
-      data: { position: "1" }
+      data: { position: 1 }
     ) {
       position
     }
     v2: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "leclerc" }
-      data: { position: "2" }
+      data: { position: 2 }
     ) {
       position
     }
     v3: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "hamilton" }
-      data: { position: "3" }
+      data: { position: 3 }
     ) {
       position
     }
     v4: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "bottas" }
-      data: { position: "4" }
+      data: { position: 5 }
     ) {
       position
     }
     v5: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "verstapen" }
-      data: { position: "5" }
+      data: { position: 4 }
     ) {
       position
     }
     v6: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "albon" }
-      data: { position: "6" }
+      data: { position: 7 }
     ) {
       position
     }
     v7: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "sainz" }
-      data: { position: "7" }
+      data: { position: 6 }
     ) {
       position
     }
     v8: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "gasly" }
-      data: { position: "8" }
+      data: { position: 9 }
     ) {
       position
     }
     v9: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "ricciardo" }
-      data: { position: "9" }
+      data: { position: 8 }
     ) {
       position
     }
     v10: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "stroll" }
-      data: { position: "10" }
+      data: { position: 11 }
     ) {
       position
     }
     v11: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "perez" }
-      data: { position: "11" }
+      data: { position: 10 }
     ) {
       position
     }
     v12: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "norris" }
-      data: { position: "12" }
+      data: { position: 13 }
     ) {
       position
     }
     v13: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "raikonen" }
-      data: { position: "13" }
+      data: { position: 12 }
     ) {
       position
     }
     v14: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "kvyat" }
-      data: { position: "14" }
+      data: { position: 15 }
     ) {
       position
     }
     v15: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "hulkenberg" }
-      data: { position: "15" }
+      data: { position: 14 }
     ) {
       position
     }
     v16: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "magnusen" }
-      data: { position: "16" }
+      data: { position: 17 }
     ) {
       position
     }
     v17: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "giovinazzi" }
-      data: { position: "17" }
+      data: { position: 16 }
     ) {
       position
     }
     v18: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "grosjean" }
-      data: { position: "18" }
+      data: { position: 19 }
     ) {
       position
     }
     v19: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "kubica" }
-      data: { position: "19" }
+      data: { position: 18 }
     ) {
       position
     }
     v20: AddDriverFinished_race(
       to: { circuitId: "shangai" }
       from: { driverId: "russel" }
-      data: { position: "20" }
+      data: { position: 20 }
     ) {
       position
     }

@@ -19,6 +19,11 @@ const GET_DRIVERS = gql`
       wins
       podiums
       salary
+      drives: drives_for {
+        Constructor {
+          name
+        }
+      }
     }
   }
 `;

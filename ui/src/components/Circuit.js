@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Grid, Image } from "semantic-ui-react";
+import "./Circuit.css";
 
 const Circuit = ({ location }) => {
   const { state } = location;
   const { item } = state;
   return (
-    <Container>
+    <Container className="circuit">
       {console.log(item)}
       <Grid>
         <Grid.Column width={6}>

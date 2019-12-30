@@ -45,14 +45,14 @@ type Circuit {
   url: String
   circuitName: String
   country: String
-  length: String
+  length: Float
   winner: [FINISHED_RACE]
 }
 
 type FINISHED_RACE @relation(name: "FINISHED_RACE") {
   from: Driver
   to: Circuit
-  position: String!
+  position: Int
 }
 
 type Season {
@@ -66,18 +66,18 @@ type Season {
 type HAS_CONSTRUCTORS @relation(name: "HAS_CONSTRUCTORS") {
   from: Season
   to: Constructor
-  points: String
+  points: Int
 }
 
 type HAS_CIRCUITS @relation(name: "HAS_CIRCUITS") {
   from: Season
   to: Circuit
-  DNF: String!
+  DNF: Int!
   DATE: String!
 }
 
 type ALL_DRIVERS @relation(name: "ALL_DRIVERS") {
   from: Season
   to: Driver
-  points: String
+  points: Int
 }
