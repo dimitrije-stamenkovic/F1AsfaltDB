@@ -1,7 +1,7 @@
 import React from "react";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
-import { Card } from "semantic-ui-react";
+import { Card, Dimmer, Loader, Image, Segment } from "semantic-ui-react";
 
 import { Link } from "@reach/router";
 
@@ -21,7 +21,12 @@ const CircuitsPage = () => {
   const { loading: loading1, data: data1, refetch: refetch1 } = useQuery(
     GET_CIRCUITS
   );
-  if (loading1) return null;
+  if (loading1)
+    return (
+      <Dimmer active inverted>
+        <Loader inverted content="Loading" />
+      </Dimmer>
+    );
 
   return (
     <Card.Group style={{ marginLeft: 120, marginTop: 30 }}>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ItemsCarousel from "react-items-carousel";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
-import { Card } from "semantic-ui-react";
+import { Card, Dimmer, Loader } from "semantic-ui-react";
 import { Link } from "@reach/router";
 
 const GET_DRIVERS = gql`
@@ -37,6 +37,12 @@ const GET_DRIVERS = gql`
           name
         }
       }
+      positions: finished_race {
+        Circuit {
+          circuitName
+        }
+        position
+      }
     }
   }
 `;
@@ -54,7 +60,12 @@ const SimiliarDrivers = ({ driver }) => {
     }
   });
 
-  if (loading) return null;
+  if (loading)
+    return (
+      <Dimmer active inverted>
+        <Loader inverted content="Loading" />
+      </Dimmer>
+    );
   if (error) return `Error! ${error}`;
   return (
     <div style={{ padding: `0 ${chevronWidth}px` }}>

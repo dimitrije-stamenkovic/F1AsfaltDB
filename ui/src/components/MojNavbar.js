@@ -30,7 +30,7 @@ export default class MojNavbar extends Component {
           // active={activeItem === "constructors"}
           // onClick={this.handleItemClick}
           >
-            Construcotrs
+            Constructors
           </Menu.Item>
         </Link>
         <Link to="/circuits">

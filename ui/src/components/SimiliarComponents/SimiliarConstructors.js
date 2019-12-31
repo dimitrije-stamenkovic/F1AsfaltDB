@@ -2,36 +2,17 @@ import React, { useState } from "react";
 import ItemsCarousel from "react-items-carousel";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
-import { Card } from "semantic-ui-react";
+import { Card, Dimmer, Loader } from "semantic-ui-react";
 import { Link } from "@reach/router";
 
-const GET_DRIVERS = gql`
-  query Driver($wins: Int, $podiums: Int, $nationality: String, $name: String) {
-    Driver(
-      filter: {
-        AND: [
-          {
-            OR: [
-              { wins_gt: $wins }
-              { podiums_gt: $podiums }
-              { nationality: $nationality }
-            ]
-          }
-          { givenName_not: $name }
-        ]
-      }
-    ) {
-      driverId
-      permanentNumber
-      code
+const GET_CONSTRUCTORS = gql`
+  {
+    Circuit(filter: { AND: [{ length_gt: 5.3 }, { length_lt: 5.6 }] }) {
+      circuitId
       url
-      givenName
-      familyName
-      dateOfBirth
-      nationality
-      wins
-      podiums
-      salary
+      circuitName
+      country
+      length
     }
   }
 `;
@@ -40,7 +21,7 @@ const SimiliarConstructors = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
 
-  const { loading, error, data } = useQuery(GET_DRIVERS, {
+  const { loading, error, data } = useQuery(GET_CONSTRUCTORS, {
     variables: {
       wins: driver.wins,
       podiums: driver.podiums,
@@ -49,7 +30,12 @@ const SimiliarConstructors = () => {
     }
   });
 
-  if (loading) return null;
+  if (loading)
+    return (
+      <Dimmer active inverted>
+        <Loader inverted content="Loading" />
+      </Dimmer>
+    );
   if (error) return `Error! ${error}`;
   return (
     <div style={{ padding: `0 ${chevronWidth}px` }}>
