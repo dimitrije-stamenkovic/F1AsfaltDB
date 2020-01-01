@@ -42,6 +42,15 @@ export default class MojNavbar extends Component {
             Circuits
           </Menu.Item>
         </Link>
+        <Link to="/search">
+          <Menu.Item
+          // name="circuits"
+          // active={activeItem === "circuits"}
+          // onClick={this.handleItemClick}
+          >
+            Search
+          </Menu.Item>
+        </Link>
       </Menu>
     );
   }
