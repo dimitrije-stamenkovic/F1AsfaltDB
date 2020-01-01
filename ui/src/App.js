@@ -1,9 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 
-// import Search from "./components/Search";
-import gql from "graphql-tag";
-import { useQuery } from "@apollo/react-hooks";
-import { Container } from "semantic-ui-react";
 import { Router } from "@reach/router";
 
 import MainPage from "./pages/MainPage";
