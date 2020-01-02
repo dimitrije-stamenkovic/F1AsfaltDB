@@ -87,7 +87,7 @@ const SimiliarDrivers = ({ driver }) => {
             state={{ item }}
           >
             <Card style={{ marginLeft: 20, marginTop: 20 }}>
-              <img src={item.url} height={300} />
+              <img src={item.url} height={300} alt={item.givenName} />
               <Card.Content>
                 <Card.Header>{item.givenName}</Card.Header>
                 <Card.Meta>

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import ItemsCarousel from "react-items-carousel";
+import React from "react";
+
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
 import { Card, Dimmer, Loader } from "semantic-ui-react";
@@ -20,7 +20,6 @@ const GET_CONSTRUCTORS = gql`
 `;
 
 const SimiliarConstructors = ({ constructor }) => {
-  const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
 
   const { loading, error, data } = useQuery(GET_CONSTRUCTORS, {
@@ -51,7 +50,7 @@ const SimiliarConstructors = ({ constructor }) => {
                 state={{ item }}
               >
                 <Card style={{ marginLeft: 20, marginTop: 20 }}>
-                  <img src={item.url} height={300} />
+                  <img src={item.url} height={300} alt={item.name} />
                   <Card.Content>
                     <Card.Header>{item.name}</Card.Header>
                     <Card.Meta>

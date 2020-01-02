@@ -68,7 +68,7 @@ const SimiliarCircuits = ({ circuit }) => {
               state={{ item }}
             >
               <Card style={{ marginLeft: 20, marginTop: 20 }}>
-                <img src={item.url} height={300} />
+                <img src={item.url} height={300} alt={item.circuitName} />
                 <Card.Content>
                   <Card.Header>{item.circuitName}</Card.Header>
                   <Card.Meta>

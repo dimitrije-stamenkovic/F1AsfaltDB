@@ -1,7 +1,7 @@
 import React from "react";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
-import { Card, Dimmer, Loader, Image, Segment } from "semantic-ui-react";
+import { Card, Dimmer, Loader } from "semantic-ui-react";
 
 import { Link } from "@reach/router";
 
@@ -35,9 +35,7 @@ const GET_DRIVERS = gql`
 `;
 
 const DriversPage = () => {
-  const { loading: loading2, data: data2, refetch: refetch2 } = useQuery(
-    GET_DRIVERS
-  );
+  const { loading: loading2, data: data2 } = useQuery(GET_DRIVERS);
 
   if (loading2)
     return (
@@ -52,7 +50,7 @@ const DriversPage = () => {
       {data2.Driver.map(item => (
         <Link key={item.givenName} to={item.driverId} state={{ item }}>
           <Card style={{ marginLeft: 20, marginTop: 20 }}>
-            <img src={item.url} height={300} />
+            <img src={item.url} height={300} alt={item.givenName} />
             <Card.Content>
               <Card.Header>{item.givenName}</Card.Header>
               <Card.Meta>

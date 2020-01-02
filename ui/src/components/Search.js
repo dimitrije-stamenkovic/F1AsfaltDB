@@ -2,15 +2,7 @@ import React, { useState } from "react";
 import { Link } from "@reach/router";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
-import {
-  Grid,
-  List,
-  Item,
-  Image,
-  Dimmer,
-  Loader,
-  Input
-} from "semantic-ui-react";
+import { Grid, List, Image, Dimmer, Loader, Input } from "semantic-ui-react";
 
 const GET_CIRCUITS = gql`
   query Circuit($search: String = "") {
@@ -104,7 +96,7 @@ const Search = ({ term, hook }) => {
     <div className="Seach">
       <Input key={"some-key"} value={search} onChange={handleChange} />
       <div className="listing" style={{ marginTop: 50 }}>
-        <Grid divided="horizontally">
+        <Grid divided>
           <Grid.Row columns={3}>
             <Grid.Column>
               {loading1 ? (
@@ -114,7 +106,7 @@ const Search = ({ term, hook }) => {
               ) : (
                 <List>
                   {data1.Circuit.map(item => (
-                    <List.Item>
+                    <List.Item key={item.circuitId}>
                       <Image avatar src={item.url} />
                       <List.Content>
                         <Link
@@ -122,7 +114,7 @@ const Search = ({ term, hook }) => {
                           to={"/circuits/" + item.circuitId}
                           state={{ item }}
                         >
-                          <List.Header as="a">{item.circuitName}</List.Header>
+                          {item.circuitName}
                         </Link>
 
                         <List.Description>
@@ -142,7 +134,7 @@ const Search = ({ term, hook }) => {
               ) : (
                 <List>
                   {data2.Driver.map(item => (
-                    <List.Item>
+                    <List.Item key={item.driverId}>
                       <Image avatar src={item.url} />
 
                       <List.Content>
@@ -151,9 +143,7 @@ const Search = ({ term, hook }) => {
                           to={"/drivers/" + item.driverId}
                           state={{ item }}
                         >
-                          <List.Header as="a" to="#">
-                            {item.givenName}
-                          </List.Header>
+                          {item.givenName}
                         </Link>
 
                         <List.Description>
@@ -177,7 +167,7 @@ const Search = ({ term, hook }) => {
               ) : (
                 <List>
                   {data3.Constructor.map(item => (
-                    <List.Item>
+                    <List.Item key={item.constructorId}>
                       <Image avatar src={item.url} />
                       <List.Content>
                         <Link
@@ -185,7 +175,7 @@ const Search = ({ term, hook }) => {
                           to={"/constructors/" + item.constructorId}
                           state={{ item }}
                         >
-                          <List.Header as="a">{item.name}</List.Header>
+                          {item.name}
                         </Link>
 
                         <List.Description>

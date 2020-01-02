@@ -1,7 +1,7 @@
 import React from "react";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
-import { Card, Dimmer, Loader, Image, Segment } from "semantic-ui-react";
+import { Card, Dimmer, Loader } from "semantic-ui-react";
 
 import { Link } from "@reach/router";
 
@@ -18,9 +18,7 @@ const GET_CIRCUITS = gql`
 `;
 
 const CircuitsPage = () => {
-  const { loading: loading1, data: data1, refetch: refetch1 } = useQuery(
-    GET_CIRCUITS
-  );
+  const { loading: loading1, data: data1 } = useQuery(GET_CIRCUITS);
   if (loading1)
     return (
       <Dimmer active inverted>
@@ -34,7 +32,7 @@ const CircuitsPage = () => {
       {data1.Circuit.map(item => (
         <Link key={item.circuitName} to={item.circuitId} state={{ item }}>
           <Card style={{ marginLeft: 20, marginTop: 20 }}>
-            <img src={item.url} height={300} />
+            <img src={item.url} height={300} alt={item.circuitId} />
             <Card.Content>
               <Card.Header>{item.circuitName}</Card.Header>
               <Card.Meta>
