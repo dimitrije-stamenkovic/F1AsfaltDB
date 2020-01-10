@@ -1,57 +1,38 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
 import { Link } from "@reach/router";
+import { Nav, NavItem, NavLink } from "reactstrap";
 
 export default class MojNavbar extends Component {
   render() {
     return (
-      <Menu>
-        <Link to="/">
-          <Menu.Item
-          // name="main"
-          // active={activeItem === "main"}
-          // onClick={this.handleItemClick}
-          >
-            Main
-          </Menu.Item>
-        </Link>
-        <Link to="/drivers">
-          <Menu.Item
-          // name="drivers"
-          // active={activeItem === "drivers"}
-          // onClick={this.handleItemClick}
-          >
-            Drivers
-          </Menu.Item>
-        </Link>
-        <Link to="/constructors">
-          <Menu.Item
-          // name="constructors"
-          // active={activeItem === "constructors"}
-          // onClick={this.handleItemClick}
-          >
-            Constructors
-          </Menu.Item>
-        </Link>
-        <Link to="/circuits">
-          <Menu.Item
-          // name="circuits"
-          // active={activeItem === "circuits"}
-          // onClick={this.handleItemClick}
-          >
-            Circuits
-          </Menu.Item>
-        </Link>
-        <Link to="/search">
-          <Menu.Item
-          // name="circuits"
-          // active={activeItem === "circuits"}
-          // onClick={this.handleItemClick}
-          >
-            Search
-          </Menu.Item>
-        </Link>
-      </Menu>
+      <Nav tabs={true} pills={true} card={true} horizontal={"center"}>
+        <NavItem>
+          <NavLink href="/">
+            <h2>Home</h2>
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/drivers">
+            <h2>Drivers</h2>
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/constructors">
+            <h2>Constructors</h2>
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/circuits">
+            <h2>Circuits</h2>
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="/search">
+            <h2>Search</h2>
+          </NavLink>
+        </NavItem>
+      </Nav>
     );
   }
 }
