@@ -39,7 +39,7 @@ const SimiliarConstructors = ({ constructor }) => {
   return (
     <div style={{ padding: `0 ${chevronWidth}px` }}>
       {data.Constructor.length === 0 ? (
-        "There is no constructors with same nationality"
+        <p>There is no constructors with same nationality</p>
       ) : (
         <div>
           <Card.Group>

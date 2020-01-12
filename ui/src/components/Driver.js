@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Grid, Image } from "semantic-ui-react";
+import { Link } from "@reach/router";
 import "./Driver.css";
 import SimiliarDrivers from "./SimiliarComponents/SimiliarDrivers";
 

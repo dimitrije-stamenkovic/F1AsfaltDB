@@ -63,7 +63,6 @@ const MainPage = () => {
               <Table dark>
                 <thead>
                   <tr>
-                    <th>First Name</th>
                     <th>Last Name</th>
                     <th>Number</th>
                     <th>Points</th>
@@ -84,7 +83,7 @@ const MainPage = () => {
                           {item.name}
                         </Link>
                       </td>
-                      <td>{item.name}</td>
+
                       <td>{item.nationality}</td>
                       <td>{item.participated[0].points}</td>
                     </tr>

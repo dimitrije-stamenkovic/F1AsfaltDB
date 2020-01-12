@@ -13,6 +13,12 @@ const GET_CONSTRUCTORS = gql`
       name
       chassis
       nationality
+      drivers {
+        Driver {
+          givenName
+          familyName
+        }
+      }
     }
   }
 `;

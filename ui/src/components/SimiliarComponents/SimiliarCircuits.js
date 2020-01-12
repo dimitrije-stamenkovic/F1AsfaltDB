@@ -48,7 +48,7 @@ const SimiliarCircuits = ({ circuit }) => {
   return (
     <div style={{ padding: `0 ${chevronWidth}px` }}>
       {data.Circuit.length === 0 ? (
-        "This circuit is unique"
+        <p>This circuit is unique</p>
       ) : (
         <ItemsCarousel
           infiniteLoop

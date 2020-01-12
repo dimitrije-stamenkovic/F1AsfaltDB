@@ -21,7 +21,11 @@ const GET_DRIVERS = gql`
       salary
       drives: drives_for {
         Constructor {
+          constructorId
+          url
           name
+          chassis
+          nationality
         }
       }
       positions: finished_race {

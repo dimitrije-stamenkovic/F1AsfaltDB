@@ -46,6 +46,12 @@ export const GET_CONSTRUCTORS = gql`
       participated {
         points
       }
+      drivers {
+        Driver {
+          givenName
+          familyName
+        }
+      }
       constructorId
       url
       name

@@ -3,6 +3,7 @@ import { Link } from "@reach/router";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
 import { Grid, List, Image, Dimmer, Loader, Input } from "semantic-ui-react";
+import { Container, Row, Col, Table } from "reactstrap";
 
 const GET_CIRCUITS = gql`
   query Circuit($search: String = "") {
@@ -64,6 +65,12 @@ const GET_CONSTRUCTORS = gql`
       }
     ) {
       constructorId
+      drivers {
+        Driver {
+          givenName
+          familyName
+        }
+      }
       url
       name
       chassis
@@ -94,102 +101,114 @@ const Search = ({ term, hook }) => {
 
   return (
     <div className="Seach">
-      <Input key={"some-key"} value={search} onChange={handleChange} />
-      <div className="listing" style={{ marginTop: 50 }}>
-        <Grid divided>
-          <Grid.Row columns={3}>
-            <Grid.Column>
-              {loading1 ? (
-                <Dimmer active inverted>
-                  <Loader inverted content="Loading" />
-                </Dimmer>
-              ) : (
-                <List>
-                  {data1.Circuit.map(item => (
-                    <List.Item key={item.circuitId}>
-                      <Image avatar src={item.url} />
-                      <List.Content>
-                        <Link
-                          key={item.name}
-                          to={"/circuits/" + item.circuitId}
-                          state={{ item }}
-                        >
-                          {item.circuitName}
-                        </Link>
+      <input
+        key={"some-key"}
+        value={search}
+        onChange={handleChange}
+        style={{ margin: "20px 0px" }}
+        placeholder="Search ..."
+      />
+      <Row>
+        <Col>
+          <h1>Drivers</h1>{" "}
+          {loading2 ? (
+            <Dimmer active inverted>
+              <Loader inverted content="Loading" />
+            </Dimmer>
+          ) : (
+            <Table dark>
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data2.Driver.map(item => (
+                  <tr key={item.givenName}>
+                    <td>
+                      <Link
+                        key={item.name}
+                        to={"/drivers/" + item.driverId}
+                        state={{ item }}
+                      >
+                        {item.givenName}
+                      </Link>
+                    </td>
+                    <td>{item.familyName}</td>
+                    <td>{item.wins}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          )}
+        </Col>
+        <Col>
+          <h1>Constructors</h1>
+          {loading3 ? (
+            <Dimmer active inverted>
+              <Loader inverted content="Loading" />
+            </Dimmer>
+          ) : (
+            <Table dark>
+              <thead>
+                <tr>
+                  <th>Last Name</th>
+                  <th>Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data3.Constructor.map(item => (
+                  <tr key={item.name}>
+                    <td>
+                      <Link
+                        to={"/constructors/" + item.constructorId}
+                        state={{ item }}
+                      >
+                        {item.name}
+                      </Link>
+                    </td>
 
-                        <List.Description>
-                          {item.circuitName + " " + item.country}
-                        </List.Description>
-                      </List.Content>
-                    </List.Item>
-                  ))}
-                </List>
-              )}
-            </Grid.Column>
-            <Grid.Column>
-              {loading2 ? (
-                <Dimmer active inverted>
-                  <Loader inverted content="Loading" />
-                </Dimmer>
-              ) : (
-                <List>
-                  {data2.Driver.map(item => (
-                    <List.Item key={item.driverId}>
-                      <Image avatar src={item.url} />
-
-                      <List.Content>
-                        <Link
-                          key={item.name}
-                          to={"/drivers/" + item.driverId}
-                          state={{ item }}
-                        >
-                          {item.givenName}
-                        </Link>
-
-                        <List.Description>
-                          {item.givenName +
-                            " " +
-                            item.familyName +
-                            " " +
-                            item.permanentNumber}
-                        </List.Description>
-                      </List.Content>
-                    </List.Item>
-                  ))}
-                </List>
-              )}
-            </Grid.Column>
-            <Grid.Column>
-              {loading3 ? (
-                <Dimmer active inverted>
-                  <Loader inverted content="Loading" />
-                </Dimmer>
-              ) : (
-                <List>
-                  {data3.Constructor.map(item => (
-                    <List.Item key={item.constructorId}>
-                      <Image avatar src={item.url} />
-                      <List.Content>
-                        <Link
-                          key={item.name}
-                          to={"/constructors/" + item.constructorId}
-                          state={{ item }}
-                        >
-                          {item.name}
-                        </Link>
-
-                        <List.Description>
-                          {item.name + " " + item.nationality}
-                        </List.Description>
-                      </List.Content>
-                    </List.Item>
-                  ))}
-                </List>
-              )}
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </div>
+                    <td>{item.nationality}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          )}
+        </Col>
+        <Col>
+          <h1>Circuits</h1>{" "}
+          {loading1 ? (
+            <Dimmer active inverted>
+              <Loader inverted content="Loading" />
+            </Dimmer>
+          ) : (
+            <Table dark>
+              <thead>
+                <tr>
+                  <th>Full name</th>
+                  <th>Name</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data1.Circuit.map(item => (
+                  <tr key={item.circuitName}>
+                    <td>
+                      <Link to={"/circuits/" + item.circuitId} state={{ item }}>
+                        {item.circuitName}
+                      </Link>
+                    </td>
+                    <td>{item.country}</td>
+                    <td>{item.length} km</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          )}
+        </Col>
+      </Row>
     </div>
   );
 };

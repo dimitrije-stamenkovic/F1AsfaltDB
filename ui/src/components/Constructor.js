@@ -18,6 +18,15 @@ const Constructor = ({ location }) => {
               <p>Name : {item.name}</p>
               <p>Chassis: {item.chassis}</p>
               <p>Nationality : {item.nationality}</p>
+              <p>Drivers:</p>
+              <p>
+                {item.drivers[0].Driver.givenName}{" "}
+                {item.drivers[0].Driver.familyName}
+              </p>
+              <p>
+                {item.drivers[1].Driver.givenName}{" "}
+                {item.drivers[1].Driver.familyName}
+              </p>
             </div>
           </Grid.Column>
         </Grid.Row>
