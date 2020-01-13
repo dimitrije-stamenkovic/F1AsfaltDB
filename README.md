@@ -12,8 +12,9 @@
 
 
 ### [`/api`](./api)
-*Start API server*
+*Seed DB and tart  API server*
 ```
+cd ./api && yarn/npm run seedDb
 cd ./api && yarn/npm start
 ```
 
